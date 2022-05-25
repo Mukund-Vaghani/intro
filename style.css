@@ -1,8 +1,6 @@
  body {
      margin: 0px;
      padding: 0px;
-     /* color: white; */
-     /* background-color: black; */
  }
 
  header {
@@ -18,8 +16,9 @@
      background-repeat: no-repeat;
      background-size: cover;
      z-index: -1;
-     opacity: 0.6;
+     opacity: 0.9;
  }
+
 
  .navbar {
      display: flex;
@@ -45,9 +44,7 @@
  }
 
  .information {
-     /* display: flex; */
      text-align: center;
-     /* justify-content: center; */
      padding: 189px 0px;
  }
 
@@ -68,8 +65,7 @@
      text-align: center;
      display: inline-block;
      padding: 0 8px 0 14px;
-     /* color: rgba(255, 255, 255, 0.3); */
-     color: black;
+     color: black
  }
 
  .intro-position span:first-child::before {
@@ -77,13 +73,13 @@
      text-align: center;
      display: inline-block;
      padding: 0 14px 0 8px;
-     color: rgba(255, 255, 255, 0.3);
+     color: black;
  }
 
  #about {
      height: auto;
      display: flex;
-     /* background-color: pink */
+     background-color: rgb(205, 200, 200);
  }
 
  .container {
@@ -102,14 +98,13 @@
  .intro {
      width: 78%;
      height: auto;
-     /* background: #000; */
+
  }
 
  .info-one {
      width: 48%;
      height: auto;
      margin-top: 15px;
-     /* background-color: black; */
  }
 
  .info-one ul li strong {
@@ -121,7 +116,6 @@
      width: 48%;
      height: auto;
      margin-top: 15px;
-     /* background-color: black; */
  }
 
  .skill ul li {
@@ -140,7 +134,7 @@
  }
 
  #project {
-     background-color: green;
+     border: 2px solid black;
      display: flex;
      flex-wrap: wrap;
      height: auto;
@@ -150,25 +144,26 @@
  }
 
  .project_1 {
-     height: 90%;
+     height: auto;
      width: 95%;
      padding: 25px;
-     /* background-color: bisque; */
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
  }
 
  .card_1 {
-     height: 350px;
+     height: 400px;
      width: 300px;
-     background-color: black;
      margin: 20px 0px;
  }
 
+ .card_1 img {
+     height: 400px;
+     width: 300px;
+ }
 
  #contact {
-     /* background-color: yellow; */
      display: flex;
      flex-wrap: wrap;
      height: auto;
@@ -180,7 +175,6 @@
      margin-top: 20px;
      margin-right: 20px;
      margin-left: 20px;
-     /* background-color: royalblue; */
  }
 
  #head {
@@ -188,16 +182,10 @@
      margin: auto;
      width: 33%;
      text-align: center;
-     /* background-color: rgb(103, 153, 37); */
- }
-
- #head:hover {
-     /* background-color: black; */
  }
 
  #address {
      border: red solid 2px;
-     /* display: inline-block; */
      width: 50%;
      margin: 80px auto;
      padding: 20px 20px;
@@ -206,32 +194,16 @@
 
  #address:hover {
      border: rgb(141, 206, 152) solid 2px;
-     /* color: black; */
  }
 
  .heading {
      cursor: pointer;
  }
 
- /* .headind_span {
-     display: block;
- } */
-
  .footer {
      height: 10%;
      width: 100%;
-     /* margin: 20px; */
-     /* background-color: black; */
      padding: 15px;
      display: flex;
      justify-content: center;
-     /* background-color: black; */
  }
-
- .block {
-     /* display: flex;
-     width: 50%;
-     justify-content: center; */
- }
-
- .icon {}
