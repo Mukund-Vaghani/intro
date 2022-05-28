@@ -11,7 +11,7 @@
      background: url(img/Background.jpeg);
      content: "";
      position: absolute;
-     height: 100%;
+     height: 100vh;
      width: 100%;
      background-repeat: no-repeat;
      background-size: cover;
