@@ -98,13 +98,37 @@
  .intro {
      width: 78%;
      height: auto;
+ }
 
+ .intro h4 {
+     padding: 0% 40%;
+     font-size: 22px;
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ .intro p {
+     font-size: 18px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     line-height: 1.3;
+     word-spacing: 2px;
  }
 
  .info-one {
      width: 48%;
      height: auto;
      margin-top: 15px;
+ }
+
+ .info-one h3 {
+     font-size: 24px;
+ }
+
+ .info-one span {
+     font-size: 18px;
+ }
+
+ strong {
+     font-size: 18px;
  }
 
  .info-one ul li strong {
@@ -118,6 +142,15 @@
      margin-top: 15px;
  }
 
+ .skill h3 {
+     font-size: 24px;
+ }
+
+ hr {
+     border: 2px solid black;
+     border-radius: 50px;
+ }
+
  .skill ul li {
      line-height: 2;
  }
@@ -128,9 +161,35 @@
      margin-top: 15px;
  }
 
+ .eduction i {
+     font-size: 24px;
+ }
+
+ .eduction h3 {
+     font-size: 22px
+ }
+
+ .eduction strong {
+     font-size: 18px;
+ }
+
+ .eduction span {
+     font-size: 18px;
+ }
+
  .eduction ul li strong {
      display: block;
      line-height: 3;
+ }
+
+ .resume a {
+     background-color: #2e94e3;
+     color: black;
+     padding: 12px;
+     border: 2px solid black;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
  }
 
  #project {
@@ -156,54 +215,193 @@
      height: 400px;
      width: 300px;
      margin: 20px 0px;
+     border: 2px solid black;
  }
 
- .card_1 img {
-     height: 400px;
-     width: 300px;
+ .card_1 a {
+     text-decoration: none;
+     font-weight: bold;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 25px;
+     color: white;
  }
+
+ .music {
+     width: 300px;
+     height: 400px;
+     border: 2px solid black;
+     background-image: url("img/music.jpg");
+     background-size: cover;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .music:hover {
+     opacity: 0.8;
+     color: rgb(169, 159, 159);
+ }
+
+ .gymweb {
+     width: 300px;
+     height: 400px;
+     border: 2px solid black;
+     background-image: url("img/gym.jpg");
+     background-size: cover;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .gymweb:hover {
+     opacity: 0.8;
+     color: rgb(169, 159, 159);
+ }
+
+ .store {
+     width: 300px;
+     height: 400px;
+     border: 2px solid black;
+     background-image: url("img/store.jpg");
+     background-size: cover;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .store:hover {
+     opacity: 0.8;
+     color: rgb(169, 159, 159);
+ }
+
+
 
  #contact {
-     display: flex;
-     flex-wrap: wrap;
-     height: auto;
- }
-
- .address {
-     height: auto;
+     height: 90vh;
      width: 100%;
-     margin-top: 20px;
+     background: url(img/contact.jpg) no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .contact-section {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .contact-info {
+     color: #fff;
+     max-width: 500px;
+     line-height: 65px;
+     padding-left: 50px;
+     font-size: 18px;
+ }
+
+ .contact-info i {
      margin-right: 20px;
-     margin-left: 20px;
- }
-
- #head {
-     border: red solid 2px;
-     margin: auto;
-     width: 33%;
-     text-align: center;
- }
-
- #address {
-     border: red solid 2px;
-     width: 50%;
-     margin: 80px auto;
-     padding: 20px 20px;
      font-size: 25px;
  }
 
- #address:hover {
-     border: rgb(141, 206, 152) solid 2px;
+ .contact-form {
+     max-width: 700px;
+     margin-right: 50px;
  }
 
- .heading {
+ .contact-info,
+ .contact-form {
+     flex: 1;
+ }
+
+ .contact-form h2 {
+     color: white;
+     text-align: center;
+     font-size: 35px;
+     text-transform: uppercase;
+     margin-bottom: 30px;
+ }
+
+ .contact-form .text-box {
+     background: black;
+     color: white;
+     border: none;
+     width: cal(50%-50%);
+     height: 50px;
+     padding: 12px;
+     font-size: 15px;
+     border-radius: 5px;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     opacity: 0.9;
+ }
+
+ .contact-form .text-box:first-child {
+     margin-right: 15px;
+ }
+
+ .contact-form textarea {
+     background-color: black;
+     color: white;
+     border: none;
+     width: 100%;
+     padding: 12px;
+     font-size: 15px;
+     min-height: 200px;
+     max-height: 400px;
+     resize: vertical;
+     border-radius: 5px;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     opacity: 0.9;
+ }
+
+ .contact-form .send-btn {
+     float: right;
+     background: #2e94e3;
+     color: white;
+     border: none;
+     width: 120px;
+     height: 40px;
+     font-size: 15px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     border-radius: 5px;
+     transition: 0.3s;
      cursor: pointer;
+     transition-property: background;
+ }
+
+ .contact-form .send-btn:hover {
+     background: #0582E3;
  }
 
  .footer {
-     height: 10%;
+     height: 5%;
      width: 100%;
      padding: 15px;
+     background-color: black;
      display: flex;
      justify-content: center;
+ }
+
+ .icon {
+     padding-left: 90px;
+ }
+
+ .icon i {
+     color: white;
+     font-size: 30px;
+     padding-right: 20px;
+ }
+
+ .copy {
+     color: white;
+     font-size: 18px;
  }
