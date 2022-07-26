@@ -1,22 +1,29 @@
- body {
+ * {
      margin: 0px;
      padding: 0px;
+     box-sizing: border-box;
+ }
+
+ ::-webkit-scrollbar {
+     display: none;
  }
 
  header {
-     height: auto;
+     height: 100vh;
+     width: 100vw;
  }
 
  header::before {
-     background: url(img/Background.jpeg);
+     background: url("img/Background.jpeg");
      content: "";
      position: absolute;
-     height: 100vh;
-     width: 100%;
+     height: 100%;
+     width: 100vw;
      background-repeat: no-repeat;
      background-size: cover;
      z-index: -1;
-     opacity: 0.9;
+     opacity: 1;
+     background-attachment: scroll;
  }
 
 
@@ -25,8 +32,10 @@
      font-size: 20px;
      position: fixed;
      background-color: black;
-     width: 100%;
+     width: 100vw;
+     height: 55px;
      justify-content: center;
+     align-items: center;
  }
 
  .navigation {
@@ -44,8 +53,8 @@
  }
 
  .information {
+     padding-top: 280px;
      text-align: center;
-     padding: 189px 0px;
  }
 
  .information h3 {
@@ -92,16 +101,17 @@
  .pic img {
      width: 13rem;
      border-radius: 100%;
-     float: left;
+     /* float: left; */
  }
 
  .intro {
-     width: 78%;
+     width: auto;
      height: auto;
  }
 
  .intro h4 {
-     padding: 0% 40%;
+     line-height: 3;
+     text-align: center;
      font-size: 22px;
      font-family: 'Courier New', Courier, monospace;
  }
@@ -114,7 +124,7 @@
  }
 
  .info-one {
-     width: 48%;
+     width: auto;
      height: auto;
      margin-top: 15px;
  }
@@ -152,7 +162,7 @@
  }
 
  .skill ul li {
-     line-height: 2;
+     line-height: 3;
  }
 
  .eduction {
@@ -163,10 +173,11 @@
 
  .eduction i {
      font-size: 24px;
+     line-height: 2;
  }
 
  .eduction h3 {
-     font-size: 22px
+     font-size: 24px
  }
 
  .eduction strong {
@@ -175,6 +186,7 @@
 
  .eduction span {
      font-size: 18px;
+     line-height: 2;
  }
 
  .eduction ul li strong {
@@ -197,9 +209,13 @@
      display: flex;
      flex-wrap: wrap;
      height: auto;
-     padding: 20px 0px;
+     padding: 28px 0px;
      justify-content: center;
      align-items: center;
+ }
+
+ #project h2 {
+     font-size: 38px;
  }
 
  .project_1 {
@@ -241,6 +257,7 @@
  .music:hover {
      opacity: 0.8;
      color: rgb(169, 159, 159);
+     text-transform: uppercase;
  }
 
  .gymweb {
@@ -258,6 +275,7 @@
  .gymweb:hover {
      opacity: 0.8;
      color: rgb(169, 159, 159);
+     text-transform: uppercase;
  }
 
  .store {
@@ -275,25 +293,29 @@
  .store:hover {
      opacity: 0.8;
      color: rgb(169, 159, 159);
+     text-transform: uppercase;
  }
 
 
 
  #contact {
-     height: 90vh;
+     height: auto;
      width: 100%;
      background: url(img/contact.jpg) no-repeat;
      background-size: cover;
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
  }
 
  .contact-section {
      width: 100%;
+     height: 550px;
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
  }
 
  .contact-info {
@@ -393,6 +415,7 @@
 
  .icon {
      padding-left: 90px;
+     margin-bottom: 15px;
  }
 
  .icon i {
@@ -404,4 +427,17 @@
  .copy {
      color: white;
      font-size: 18px;
+ }
+
+ @media only screen and (max-width:700px) {
+
+     html,
+     body {
+         width: 100%;
+         height: 100%;
+         margin: 0px;
+         padding: 0px;
+         overflow-x: hidden;
+     }
+
  }
